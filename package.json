@@ -1,0 +1,36 @@
+{
+  "name": "YouTubeMusic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder --mac"
+  },
+  "keywords": [],
+  "author": "joi0104",
+  "license": "ISC",
+  "devDependencies": {
+    "@getstation/electron-google-oauth2": "^2.1.0",
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.joi0104.youtube-music-app",
+    "productName": "YouTube Music",
+    "copyright": "Copyright © 2021 ${author}",
+    "mac": {
+      "icon": "./assets/icons/icon.icns",
+      "category": "public.app-category.music"
+    },
+    "files": [
+      "./assets/**/*",
+      "*.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "dependencies": {}
+}
