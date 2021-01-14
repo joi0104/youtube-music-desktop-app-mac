@@ -1,5 +1,5 @@
 {
-  "name": "YouTubeMusic",
+  "name": "youtube-music-desktop-app-mac",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -12,7 +12,6 @@
   "author": "joi0104",
   "license": "ISC",
   "devDependencies": {
-    "@getstation/electron-google-oauth2": "^2.1.0",
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1"
   },
