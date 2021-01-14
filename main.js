@@ -1,13 +1,13 @@
-const { app, BrowserWindow, session } = require("electron");
+const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
   let win = new BrowserWindow({
+    title: "YouTube Music",
     width: 1100,
     height: 600,
     webPreferences: {
       nodeIntegration: true,
     },
-    title: "YouTube Music",
   });
 
   win.webContents.loadURL("https://music.youtube.com");
@@ -31,5 +31,3 @@ app.on("activate", () => {
 app.on("before-quit", () => {
   app.exit();
 });
-
-app.mar;
